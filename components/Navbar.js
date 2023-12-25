@@ -71,7 +71,7 @@ function Navbar() {
      lg:h[12vh] sticky top-[20px]
       z-50  px-4 "
     >
-      <div className="max-w-container h-full mx-auto py-1 font-titleFont flex w-[70%] items-center justify-between m-5 rounded-[50px] p-3 px-[30px]  shadow bg-[#739072] text-[white] ">
+      <div className="max-w-container h-full mx-auto py-1 font-titleFont flex w-[80%] items-center justify-between m-5 rounded-[50px] p-3 px-[30px]  shadow bg-[#739072] text-[white] ">
         <motion.div
           className="font-titleFont text-2xl font-extrabold"
           initial={{ opacity: 0 }}
@@ -155,14 +155,14 @@ function Navbar() {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.1 }}
-              className="w-[40%] h-full overflow-y-scroll scrobarHide bg-[#739072] flex flex-col justify-center items-center px-4 py-10 relative"
+              className="w-[60%] h-full overflow-y-scroll scrobarHide bg-[#739072] flex flex-col justify-center items-center px-4 py-8 relative"
             >
               <MdOutlineClose
                 onClick={() => setShowMenu(false)}
                 className="text-3xl text-textGreen cursor-pointer hover:text-red-500 absolute top-4 right-4"
               />
-              <div className="flex flex-col justify-center items-center">
-                <ul className="flex flex-col text-[30px] gap-14 text-center ">
+              <div className="flex flex-col justify-center items-center gap-6">
+                <ul className="flex flex-col text-[20px] gap-24 text-center ">
                   <Link
                     onClick={handleScroll}
                     href={"#home"}
@@ -216,7 +216,7 @@ function Navbar() {
                     </motion.li>
                   </Link>
                 </ul>
-                <div className=" items-center justify-center w-full py-6 gap-4 flex flex-1 relative ">
+                <div className=" items-center justify-center w-full py-6 gap-8 flex flex-1 relative ">
                   <motion.div
                     initial={{ y: -10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
