@@ -16,7 +16,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/italy.jpg" height={200} width={290} />
+              <Image src="/italy.jpg" height={200} width={290} alt="italy" />
             </figure>
             <div className=" relative">
             <span className="text text-[white] place  z-2 text-[40px] leading-[30px]  ">
@@ -28,7 +28,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/china.jpg" height={200} width={290} />
+              <Image src="/china.jpg" height={200} width={290} alt="china" />
             </figure>
             <div className="relative">
 
@@ -41,7 +41,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/swis.jpg" height={200} width={290} />
+              <Image src="/swis.jpg" height={200} width={290} alt="swizerland" />
             </figure>
             <div className="relative">
 
@@ -54,7 +54,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/egypt.jpg" height={200} width={290} />
+              <Image src="/egypt.jpg" height={200} width={290} alt="egypt" />
             </figure>
             <div className="relative">
 
@@ -67,7 +67,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/malasiya.jpg" height={200} width={290} />
+              <Image src="/malasiya.jpg" height={200} width={290} alt="malasiya" />
             </figure>
             <div className="relative">
 
@@ -80,7 +80,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/dub.jpg" height={200} width={290} />
+              <Image src="/dub.jpg" height={200} width={290} alt="dubai" />
             </figure>
             <div className="relative">
 
@@ -93,7 +93,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/ta.jpg" height={200} width={290} />
+              <Image src="/ta.jpg" height={200} width={290} alt="india" />
             </figure>
             <div className="relative">
 
@@ -106,7 +106,7 @@ const Top = () => {
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
-              <Image src="/canada.jpg" height={200} width={290} />
+              <Image src="/canada.jpg" height={200} width={290} alt="canada" />
             </figure>
             <div className="relative">
 

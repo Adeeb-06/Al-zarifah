@@ -4,7 +4,10 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <section id="about" className="overflow-hidden m-5 pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
+      <section
+        id="about"
+        className="overflow-hidden m-5 pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark"
+      >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
@@ -13,7 +16,7 @@ const About = () => {
                   <div className="py-3 sm:py-4">
                     <Image
                       src="/man.jpg"
-                      alt=""
+                      alt="man"
                       width={200}
                       height={200}
                       className="w-full rounded-2xl"
@@ -21,11 +24,10 @@ const About = () => {
                   </div>
                   <div className="py-3 sm:py-4">
                     <Image
-                      
                       src="/dunia.jpg"
                       width={200}
                       height={300}
-                      alt=""
+                      alt="world"
                       className="w-full rounded-2xl"
                     />
                   </div>
@@ -36,7 +38,7 @@ const About = () => {
                       src="/pastport.jpg"
                       width={500}
                       height={500}
-                      alt=""
+                      alt="pasport"
                       className="w-full rounded-2xl"
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
@@ -620,8 +622,11 @@ const About = () => {
                   Why Choose Us
                 </span>
                 <h2 className=" tracking-tight  text-gray-900 dark:text-white mb-5 text-3xl font-bold text-dark dark:text-black sm:text-[40px]/[48px]">
-                Unlock Your Wings: Discover <span className="text-textGreen">Al-Zarifah</span>'s Passion for Seamless Air Travel Experiences!
+                  Unlock Your Wings: Discover{" "}
+                  <span className="text-textGreen">Al-Zarifah</span>&apos;s
+                  Passion for Seamless Air Travel Experiences!
                 </h2>
+
                 <p className="mb-5 text-base text-body-color dark:text-dark-6">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
