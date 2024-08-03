@@ -75,7 +75,7 @@ function Navbar() {
       <div className="max-w-container h-full   font-titleFont flex  items-center justify-between  p-3 px-[30px]  shadow bg-[#6482AD] text-[white] ">
         <div className="logo">
           <Link href={'/'}>
-            <Image src={'/logo1.png'} width={100} height={100} />
+            <Image src={'/logo1.png'} width={100} height={100} alt="logo" />
           </Link>
         </div>
         <div className="hidden mdl:inline-flex items-start gap-7">

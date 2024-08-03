@@ -49,7 +49,7 @@ const Tour = () => {
       <div className="flex flex-wrap justify-center gap-4 m-10 items-center">
         {data.map((i)=>(
 
-        <div className="m-0 p-0 border-none outline-none ">
+        <div key={i.name} className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
               <Image src={i.image} height={200} width={290} alt="italy" />

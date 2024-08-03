@@ -53,7 +53,7 @@ const Brand = () => {
         <Image src='/cathi.png' height={130} width={124} alt='emirates'  /> */}
 
           {data.map((i) => (
-            <div className=" max-w-sm p-6 bg-gray-200 border border-gray-200 rounded-lg shadow hover:bg-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex justify-center items-center">
+            <div key={i.name} className=" max-w-sm p-6 bg-gray-200 border border-gray-200 rounded-lg shadow hover:bg-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex justify-center items-center">
               <Image src={i.link} height={120} width={120} alt={i.name} />
             </div>
           ))}
