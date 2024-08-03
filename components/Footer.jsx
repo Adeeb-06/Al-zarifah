@@ -1,16 +1,19 @@
 import React from "react";
 import Link from 'next/link';
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <>
      <footer className="text-gray-600 body-font">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <Link href='/' className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <span className="ml-3 text-xl font-extrabold">Al Zarifah</span>
-    </Link>
+  <div className="logo">
+          <Link href={'/'}>
+            <Image src={'/logo1.png'} width={100} height={100} />
+          </Link>
+        </div>
     <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Al Zarifah —
-      <Link href="https://adeeb-portfolio.vercel.app" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Created By <span className="font-extrabold text-textGreen">Mohammad Adeeb</span></Link>
+      <Link href="https://sheikhmohammadadeeb.vercel.app" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Created By <span className="font-extrabold text-textGreen">Mohammad Adeeb</span></Link>
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <Link href='/' className="text-gray-500">
