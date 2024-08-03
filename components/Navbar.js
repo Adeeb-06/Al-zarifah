@@ -16,7 +16,7 @@
 //                 <li><Link href='/'>Home</Link></li>
 //                 <li><Link href='/'>About</Link></li>
 //                 <li><Link href='/'>Features</Link></li>
-                
+
 //             </ul>
 //         </div>
 //         <div className="last">
@@ -45,6 +45,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
+import Image from "next/image";
 
 function Navbar() {
   const ref = useRef("")
@@ -65,27 +66,22 @@ function Navbar() {
     e.currentTarget.classList.add("active");
   };
   return (
-   
+
     <div
-      className="  shadow-navbarShadow h-20
-     lg:h[12vh] sticky top-[20px]
-      z-50  px-4 "
+      className="  shadow-navbarShadow h-24
+     lg:h[12vh] sticky 
+      z-50   "
     >
-      <div className="max-w-container h-full mx-auto py-1 font-titleFont flex w-[80%] items-center justify-between m-5 rounded-[50px] p-3 px-[30px]  shadow bg-[#739072] text-[white] ">
-        <motion.div
-          className="font-titleFont text-2xl font-extrabold"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          {" "}
-         Al-Zarifah
-        </motion.div>
+      <div className="max-w-container h-full   font-titleFont flex  items-center justify-between  p-3 px-[30px]  shadow bg-[#6482AD] text-[white] ">
+        <div className="logo">
+          <Link href={'/'}>
+            <Image src={'/logo1.png'} width={100} height={100} />
+          </Link>
+        </div>
         <div className="hidden mdl:inline-flex items-start gap-7">
           <ul className="flex text-[17px] gap-7">
             <Link
-              onClick={handleScroll}
-              href={"#home"}
+              href={"/"}
               className="flex items-center gap-1 font-medium text-[white] hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -97,8 +93,8 @@ function Navbar() {
               </motion.li>
             </Link>
             <Link
-              onClick={handleScroll}
-              href={"#about"}
+
+              href={"/about"}
               className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -110,8 +106,7 @@ function Navbar() {
               </motion.li>
             </Link>
             <Link
-              onClick={handleScroll}
-              href={"#features"}
+              href={"/features"}
               className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
               <motion.li
@@ -120,6 +115,19 @@ function Navbar() {
                 transition={{ duration: 0.1, delay: 0.2 }}
               >
                 Features
+              </motion.li>
+            </Link>
+            <Link
+
+              href={"/tour"}
+              className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
+            >
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.1, delay: 0.2 }}
+              >
+                Tour
               </motion.li>
             </Link>
             <Link
@@ -133,6 +141,19 @@ function Navbar() {
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
                 Contact
+              </motion.li>
+            </Link>
+            <Link
+
+              href={"/login"}
+              className="flex items-center gap-1 p-3 rounded-xl bg-[#0300a7] font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
+            >
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.1, delay: 0.3 }}
+              >
+                Login/Register
               </motion.li>
             </Link>
           </ul>
@@ -177,8 +198,7 @@ function Navbar() {
                     </motion.li>
                   </Link>
                   <Link
-                    onClick={handleScroll}
-                    href={"#about"}
+                    href={"/about"}
                     className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
                   >
                     <motion.li
@@ -203,6 +223,19 @@ function Navbar() {
                     </motion.li>
                   </Link>
                   <Link
+
+                    href={"/tour"}
+                    className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
+                  >
+                    <motion.li
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.1, delay: 0.2 }}
+                    >
+                      Tour
+                    </motion.li>
+                  </Link>
+                  <Link
                     onClick={handleScroll}
                     href={"#contact"}
                     className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
@@ -215,6 +248,19 @@ function Navbar() {
                       Contact
                     </motion.li>
                   </Link>
+                  <Link
+
+                    href={"/login"}
+                    className="flex items-center gap-1 p-3 rounded-xl bg-[#0300a7] font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
+                  >
+                    <motion.li
+                      initial={{ x: -10, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.1, delay: 0.3 }}
+                    >
+                      Login/Register
+                    </motion.li>
+                  </Link>
                 </ul>
                 <div className=" items-center justify-center w-full py-6 gap-8 flex flex-1 relative ">
                   <motion.div
@@ -225,7 +271,7 @@ function Navbar() {
                     <a href="" target="_blank">
                       <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:translate-y-2 transition-all duration-300">
                         {/* <TbBrandGithub /> */}
-                        <SlSocialFacebook/>
+                        <SlSocialFacebook />
                       </span>
                     </a>
                   </motion.div>
@@ -253,7 +299,7 @@ function Navbar() {
                   </motion.div>
                 </div>
               </div>
-              
+
             </motion.div>
           </div>
         )}

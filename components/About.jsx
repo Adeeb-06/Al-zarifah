@@ -6,7 +6,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="overflow-hidden m-5 pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark"
+        className="overflow-hidden lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark"
       >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
