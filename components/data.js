@@ -1,5 +1,6 @@
 import React from "react";
 export const destination = [
+  { key: "dhaka", label: "Dhaka" },
   { key: "china", label: "China" },
   { key: "dubai", label: "Dubai" },
   { key: "singapore", label: "Singapore" },
