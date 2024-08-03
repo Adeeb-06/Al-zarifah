@@ -7,7 +7,7 @@ const Feature = () => {
       <section id="features" className="mt-6">
         <div className="text-center">
           <p className="relative block text-[17px] leading-[28px] text-[#808080] font-[600px] uppercase mb-[2px]  ">Specials</p>
-          <h1 className="relative block text-[50px] leading-[60px]  sm:text-[40px]/[48px] text-textGreen mb-1 text-4xl tracking-tight font-extrabold  ">Why travel with Al-zarifah?</h1>
+          <h1 className="relative block text-[50px] leading-[60px]  sm:text-[40px]/[48px] text-textGreen mb-1 text-4xl tracking-tight font-extrabold  ">Why travel with AF Travels?</h1>
           <div className="line w-[240px] h-[4px] mx-auto bg-[#405D72] mb-4"></div>
         </div>
         <div className="flex gap-10 flex-wrap justify-center mt-8 ">
@@ -36,7 +36,7 @@ const Feature = () => {
                 <div className="rounded-[50%] h-[100px] w-[100px] border relative  bottom-[66px] m-auto  iconbox ">
                     <Image src='/skill.png' width={80} height={60} alt="icon" />
                 </div>
-                <h4 className="lowe text-center">12+ Years of Travel Experience</h4>
+                <h4 className="lowe text-center">5+ Years of Travel Experience</h4>
               </div>
             
           </div>

@@ -12,7 +12,7 @@ const Footer = () => {
             <Image src={'/logo1.png'} width={100} height={100} alt="logo" />
           </Link>
         </div>
-    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Al Zarifah —
+    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 AF Travels —
       <Link href="https://sheikhmohammadadeeb.vercel.app" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Created By <span className="font-extrabold text-textGreen">Mohammad Adeeb</span></Link>
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
