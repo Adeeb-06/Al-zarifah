@@ -84,77 +84,59 @@ function Navbar() {
               href={"/"}
               className="flex items-center gap-1 font-medium text-[white] hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1 }}
-              >
+              <li>
                 Home
-              </motion.li>
+              </li>
             </Link>
             <Link
 
               href={"/about"}
               className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.1 }}
-              >
+              <li>
                 About
-              </motion.li>
+              </li>
             </Link>
             <Link
               href={"/features"}
               className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.2 }}
-              >
+              <li>
                 Features
-              </motion.li>
+              </li>
             </Link>
             <Link
 
               href={"/tour"}
               className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.2 }}
+              <li
+
               >
                 Tour
-              </motion.li>
+              </li>
             </Link>
             <Link
               onClick={handleScroll}
               href={"#contact"}
               className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.3 }}
+              <li
+
               >
                 Contact
-              </motion.li>
+              </li>
             </Link>
             <Link
 
               href={"/login"}
               className="flex items-center gap-1 p-3 rounded-xl bg-[#0300a7] font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.3 }}
+              <li
+
               >
                 Login/Register
-              </motion.li>
+              </li>
             </Link>
           </ul>
         </div>
@@ -163,110 +145,94 @@ function Navbar() {
           onClick={() => setShowMenu(true)}
           className="w-6 h-5 flex flex-col justify-between items-center mdl:hidden text-4xl text-textGreen cursor-pointer overflow-hidden group"
         >
-          <span className="w-full h-[2px] bg-textGreen inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
-          <span className="w-full h-[2px] bg-textGreen inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
-          <span className="w-full h-[2px] bg-textGreen inline-flex transform translate-x-1  group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
+          <span className="w-full h-[2px] bg-black inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
+          <span className="w-full h-[2px] bg-black inline-flex transform translate-x-3 group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
+          <span className="w-full h-[2px] bg-black inline-flex transform translate-x-1  group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
         </div>
         {showMenu && (
           <div
             ref={(node) => (ref.current = node)}
             className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-white bg-opacity-50 flex flex-col items-end"
           >
-            <motion.div
-              initial={{ x: 20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.1 }}
-              className="w-[60%] h-full overflow-y-scroll scrobarHide bg-[#739072] flex flex-col justify-center items-center px-4 py-8 relative"
+            <div
+
+              className="w-[60%] h-full overflow-y-scroll scrobarHide bg-[#6482AD] flex flex-col justify-center items-center px-4 py-8 relative"
             >
               <MdOutlineClose
                 onClick={() => setShowMenu(false)}
                 className="text-3xl text-textGreen cursor-pointer hover:text-red-500 absolute top-4 right-4"
               />
               <div className="flex flex-col justify-center items-center gap-6">
-                <ul className="flex flex-col text-[20px] gap-24 text-center ">
+                <ul className="flex flex-col text-[20px] gap-14 text-center ">
                   <Link
                     onClick={handleScroll}
                     href={"#home"}
                     className="flex items-center gap-1 font-medium text-[white] hover:text-textGreen cursor-pointer duration-300 nav-link"
                   >
-                    <motion.li
-                      initial={{ x: -10, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.1 }}
+                    <li
+
                     >
                       Home
-                    </motion.li>
+                    </li>
                   </Link>
                   <Link
                     href={"/about"}
                     className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
                   >
-                    <motion.li
-                      initial={{ x: -10, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.1, delay: 0.1 }}
+                    <li
+
                     >
                       About
-                    </motion.li>
+                    </li>
                   </Link>
                   <Link
-                    onClick={handleScroll}
-                    href={"#features"}
+
+                    href={"/features"}
                     className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
                   >
-                    <motion.li
-                      initial={{ x: -10, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.1, delay: 0.2 }}
+                    <li
+
                     >
                       Features
-                    </motion.li>
+                    </li>
                   </Link>
                   <Link
 
                     href={"/tour"}
                     className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
                   >
-                    <motion.li
-                      initial={{ y: -10, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.1, delay: 0.2 }}
+                    <li
+
                     >
                       Tour
-                    </motion.li>
+                    </li>
                   </Link>
                   <Link
                     onClick={handleScroll}
                     href={"#contact"}
                     className="flex items-center gap-1 font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
                   >
-                    <motion.li
-                      initial={{ x: -10, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.1, delay: 0.3 }}
+                    <li
+
                     >
                       Contact
-                    </motion.li>
+                    </li>
                   </Link>
                   <Link
 
                     href={"/login"}
                     className="flex items-center gap-1 p-3 rounded-xl bg-[#0300a7] font-medium text-[white]  hover:text-textGreen cursor-pointer duration-300 nav-link"
                   >
-                    <motion.li
-                      initial={{ x: -10, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.1, delay: 0.3 }}
+                    <li
+
                     >
                       Login/Register
-                    </motion.li>
+                    </li>
                   </Link>
                 </ul>
                 <div className=" items-center justify-center w-full py-6 gap-8 flex flex-1 relative ">
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1 }}
+                  <div
+
                   >
                     <a href="" target="_blank">
                       <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:translate-y-2 transition-all duration-300">
@@ -274,33 +240,29 @@ function Navbar() {
                         <SlSocialFacebook />
                       </span>
                     </a>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.1 }}
+                  </div>
+                  <div
+
                   >
                     <a href="" target="_blank">
                       <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:translate-y-2 transition-all duration-300">
                         <SlSocialInstagram />
                       </span>
                     </a>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
+                  </div>
+                  <div
+
                   >
                     <a href="" target="_blank">
                       <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:translate-y-2 transition-all duration-300">
                         <SlSocialLinkedin />
                       </span>
                     </a>
-                  </motion.div>
+                  </div>
                 </div>
               </div>
 
-            </motion.div>
+            </div>
           </div>
         )}
       </div>

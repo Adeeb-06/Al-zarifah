@@ -15,18 +15,7 @@ const Top = () => {
         <div className="line w-[240px] h-[4px] mx-auto bg-[#405D72] mb-4"></div>
       </div>
       <div className="flex flex-wrap justify-center gap-4 m-10 items-center">
-        <div className="m-0 p-0 border-none outline-none ">
-          <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
-            <figure className="image-box-top">
-              <Image src="/italy.jpg" height={200} width={290} alt="italy" />
-            </figure>
-            <div className=" relative">
-              <span className="text text-[white] place  z-2 text-[40px] leading-[30px]  ">
-                Italy
-              </span>
-            </div>
-          </div>
-        </div>
+  
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
@@ -40,32 +29,8 @@ const Top = () => {
             </div>
           </div>
         </div>
-        <div className="m-0 p-0 border-none outline-none ">
-          <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
-            <figure className="image-box-top">
-              <Image src="/swis.jpg" height={200} width={290} alt="swizerland" />
-            </figure>
-            <div className="relative">
-
-              <span className="text text-[white] place text-center z-2 text-[40px] leading-[30px]  ">
-                Swizerland
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="m-0 p-0 border-none outline-none ">
-          <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
-            <figure className="image-box-top">
-              <Image src="/egypt.jpg" height={200} width={290} alt="egypt" />
-            </figure>
-            <div className="relative">
-
-              <span className="text text-[white] place text-center z-2 text-[40px] leading-[30px]  ">
-                Egypt
-              </span>
-            </div>
-          </div>
-        </div>
+    
+        
         <div className="m-0 p-0 border-none outline-none ">
           <div className="inner-box relative block overflow-hidden rounded-[5px] mb-[30px] ">
             <figure className="image-box-top">
