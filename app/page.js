@@ -17,7 +17,7 @@ export default function Home() {
       <Feature/>
       <Top/>
       <Hajj/>
-      <Client/>
+      
     
     </>
   );
