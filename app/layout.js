@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className='light'>
       <body className={inter.className}>
         <Providers>
-          {/* <Navbar /> */}
+           <Navbar /> 
           {children}
-          {/* <Contact/>
-          <Footer /> */}
+          <Contact/>
+          <Footer />
         </Providers>
       </body>
       {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
