@@ -14,8 +14,6 @@ const Contact = () => {
 
                 <div className="bg-[#011c2b] rounded-lg p-6 h-full max-lg:order-1">
                     <h2 className="text-xl text-white">Contact Information</h2>
-                    <p className="text-sm text-gray-300 mt-4">Have some big idea or brand to develop and need help?</p>
-
                     <ul className="mt-16 space-y-8">
                         <li className="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff'

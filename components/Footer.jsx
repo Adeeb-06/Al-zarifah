@@ -40,6 +40,9 @@ const Footer = () => {
       </Link>
     </span>
   </div>
+  <div className="footerimage relative px-5 py-20 mx-auto   bg-black w-full h-full">
+    <Image src={'/footer-payment.png'} alt="footerimage" fill/>
+  </div>
 </footer>
     </>
   );

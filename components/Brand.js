@@ -8,8 +8,16 @@ const data = [
     name: 'emirates'
   },
   {
+    link: '/biman.png',
+    name: 'Bimang bangladesh'
+  },
+  {
     link: '/british.png',
     name: 'British Airlines'
+  },
+  {
+    link: '/novoair.jpg',
+    name: 'novoair'
   },
   {
     link: '/qatar.png',
@@ -20,12 +28,20 @@ const data = [
     name: 'singapore'
   },
   {
+    link: '/usbangla.jpg',
+    name: 'us bangla'
+  },
+  {
     link: '/malin.png',
     name: 'mal'
   },
   {
     link: '/mal.png',
     name: 'emirates'
+  },
+  {
+    link: '/air-astra.jpg',
+    name: 'air astra'
   },
   {
     link: '/cathi.png',

@@ -43,7 +43,7 @@ const SearchPanel = () => {
                     </div>
 
                     <div className="w-full lg:w-auto">
-                        <Link href={'/underconstruction'}>
+                        <Link href={'/visa'}>
                         <Button color='success' size='lg' className='w-full'>
                             Find Now
                         </Button>
